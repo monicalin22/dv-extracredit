@@ -10,7 +10,7 @@
         <div class="intro-content">
             <img src="media/Globe.png" class="icon">
             <h1>Tracking the Russian Invasion of Ukraine</h1>
-            <h2>From March 15 to April 15, 2022</h2>
+            <h2>From March 15 to April 12, 2022</h2>
             <img src="media/scroll.png" id="scroll-icon">
         </div>
     </div>
@@ -84,7 +84,33 @@
             <i>(All data is from the New York Times.</i>
         </p>
         <img src="media/summary.png" class="summary">
-        <h2 class="end">Thank you for visiting!!! - Monica ☺｡･:*:･ﾟ</h2>
+        <h3 class="end">Write-Up</h2>
+        <p>
+            I redesigned the second set of map visualizations from 
+            <a href="https://www.nytimes.com/interactive/2022/world/europe/ukraine-maps.html">
+            an article by the New York Times regarding the Russia-Ukraine War.</a>
+            The maps I am referring to are from <i>"April 13, 2022 - Russia tightens its grip on Mariupol."</i>
+            Many maps included in the NYT's coverage of the Russia-Ukraine War lack 
+            interactivity, animations, and storytelling, which I think would really 
+            improve the communication of their coverage. (The maps contain a lot of information, 
+            and presenting a static map does little to help the viewer process the sides 
+            involved in the war as well as physical positionings.) For the maps I chose specifically, 
+            when I first came across the 3 different maps of Ukraine, I could not 
+            help but wonder why the NYT chose 3 different maps in a time series of the same city. 
+            Would it not have been more compelling to show the <b>progression</b> of Russian forces 
+            in a such a key Ukranian city on the same map or an animation? As such, some 
+            ideas I first brainstormed was a map similar to Charles Minard's of Napoleon's 
+            failed invasion. I was also thinking of an interactive slider that would show the 
+            progression of Russian forces into Mariupol. <br><br>
+            In the end, after an email conversation with Professor Swinehart, I decided to create a 
+            scrollytelling story with the same visualizations from the NYT. By combining the maps
+            from March 15 to April 12 into a scrolltelling story, users can now directly and more 
+            easily see the advance of Russian troops into Mariupol, rather than having to compare 
+            3 unfamiliar maps side-by-side. Coupled with text/descriptions, it becomes 
+            very clear that Russian forces may very well take control of the 
+            key Ukranian city soon.
+        </p>
+        <h3 class="thanks">Thank you for visiting!!! - Monica ☺｡･:*:･ﾟ</h2>
     </div>
 
     <script language="JavaScript">
@@ -103,7 +129,7 @@
             if (scrollPos > 1600) {
                 url = "media/map2.png"
             }
-            if (scrollPos > 2030) {
+            if (scrollPos > 2050) {
                 url = "media/map3.png"
             }
             document.getElementById("ukraine").src = url;

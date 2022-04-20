@@ -88,6 +88,10 @@ main#container {
     background-color: #e6f2ff;
 }
 
+a {
+    color: #0066cc;
+}
+
 .scroll__text {
     position: relative;
     padding: 0 1rem;
@@ -110,6 +114,9 @@ main#container {
 }
 
 .end {
-    margin-top: 4em;
-    margin-bottom: 8em;
+    margin-top: 3em;
+}
+
+.thanks {
+    margin-bottom: 6em;
 }
