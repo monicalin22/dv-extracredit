@@ -51,8 +51,8 @@
                             Valeriy Zaluzhnyi, the commander in chief of 
                             Ukraine&#8217s armed forces, said on Facebook on 
                             Monday that Ukrainian forces were continuing to 
-                            “hold the city, durably and sustainably,” but given 
-                            <b>recent Russian gains, analysts at the Institute for 
+                            “hold the city, durably and sustainably,” but <b>given 
+                            recent Russian gains, analysts at the Institute for 
                             the Study of War, a Washington research group, 
                             believe that Russian forces are likely to capture 
                             Mariupol in the coming week.</b>
@@ -90,14 +90,17 @@
     <script language="JavaScript">
 
         let scrollPos = 0;
-        const obj = document.getElementById("container");
         
-        obj.onscroll = function() {
+        window.onscroll = function() {
             var url = document.getElementById("ukraine").src;
+            var step = document.getElementsByClassName("step");
             scrollPos = window.pageYOffset;
             console.log(url);
             console.log(scrollPos);
             if (scrollPos > 1000) {
+                url = "media/map1.png"
+            }
+            if (scrollPos > 1600) {
                 url = "media/map2.png"
             }
             if (scrollPos > 2000) {

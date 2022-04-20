@@ -7,7 +7,7 @@
     margin-left: 0px;
     width: 100%;
     background-color: white;
-    height: 50em;
+    min-height: 50em;
 }
 
 .intro-content {
