@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="media/ukraine.png">
 </head>
 
 <body>
@@ -70,17 +71,26 @@
 					</div>
 				</div>
 			</section>
-			<div id='anchor-4'></div>
-			<section id='outro'></section>
-			<div id='anchor-5'></div>
 		</div>
-
 	</main>
+
+    <div id='outro'>
+        <p>
+            Below is a map visualizing a more detailed look at
+            Russia strengthening its grip on Ukraine.
+            Highlighted areas show estimates of large changes 
+            in the shapes of buildings using radar data and 
+            satellite imagery taken on Feb. 20 and April 5.
+            <i>(All data is from the New York Times.</i>
+        </p>
+        <img src="media/summary.png" class="summary">
+        <h2 class="end">Thank you for visiting!!! - Monica ☺｡･:*:･ﾟ</h2>
+    </div>
 
     <script language="JavaScript">
 
         let scrollPos = 0;
-        const obj = document.getElementById("sticky");
+        const obj = document.getElementById("container");
         
         obj.onscroll = function() {
             var url = document.getElementById("ukraine").src;
