@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Marcellus&family=Work+Sans:wght@300;400;800&display=swap');
+
+.intro {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    background-color: white;
+    height: 50em;
+}
+
+.intro-content {
+    padding-top: 14%;
+}
+
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7.5%;
+}
+
+#scroll-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 2.5%;
+    padding-top: 5%;
+    animation: top 1s ease-in-out infinite;
+}
+    
+@keyframes top{
+    from{transform:translateY(0px);}
+    to{transform:translateY(15px);}
+}
+
+h1 {
+    font-family: 'Marcellus', serif;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 1.5%;
+    margin-bottom: -0.5%;
+}
+
+h2 {
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    padding-bottom: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+main#container {
+    position: relative;
+}
+
+#sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-left: 50%;
+}
+
+#scroll {
+    position: relative;
+    width: 50%;
+}
+
+.step {
+    margin: 4em auto 16em 4em;
+    border: 1px solid #333;
+    background-color: #e6f2ff;
+}
+
+.scroll__text {
+    position: relative;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+#ukraine {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20%;
+    display: block;
+}

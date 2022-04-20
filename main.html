@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="intro">
+        <div class="intro-content">
+            <img src="media/Globe.png" class="icon">
+            <h1>Tracking the Russian Invasion of Ukraine</h1>
+            <h2>From March 15 to April 15, 2022</h2>
+            <img src="media/scroll.png" id="scroll-icon">
+        </div>
+    </div>
+
+	<main id='container'>
+
+        <div id="sticky">
+            <img src="media/map1.png" id="ukraine">
+        </div>
+
+		<div id='scrolly'>
+			<section id='scroll'>
+				<div class='scroll__text'>
+					<div class='step' data-step='1'>
+                        <h3>MARCH 15, ONE MONTH AGO</h3>
+						<p>Russia had the city surrounded, 
+                            cutting off supply lines for Ukranian troops.
+                            <br><br>
+                            Seizing Mariupol is crucial for Russia. The
+                            city occupies a strategic location 
+                            between Crimea, which Russia annexed 
+                            in 2014, and areas of the Donbas region 
+                            in eastern Ukraine that are controlled by 
+                            Russia-backed separatists. If Russia 
+                            takes control of the city, troops fighting 
+                            there could be redeployed to Donbas, 
+                            which is now Russia&#8217s central focus in 
+                            the war.
+                        </p>
+					</div>
+					<div class='step' data-step='2'>
+                        <h3>MARCH 28, TWO WEEKS AGO</h3>
+						<p>Russian forces had advanced toward the city
+                            center on multiple fronts (from the north, east, and west.)
+                            <br><br>
+                            Despite being outnumbered, Ukrainian troops 
+                            continue to hold some key areas of Mariupol. 
+                            Valeriy Zaluzhnyi, the commander in chief of 
+                            Ukraine&#8217s armed forces, said on Facebook on 
+                            Monday that Ukrainian forces were continuing to 
+                            “hold the city, durably and sustainably,” but given 
+                            <b>recent Russian gains, analysts at the Institute for 
+                            the Study of War, a Washington research group, 
+                            believe that Russian forces are likely to capture 
+                            Mariupol in the coming week.</b>
+                        </p>
+					</div>
+					<div class='step' data-step='3'>
+                        <h3>APRIL 12, NOW</h3>
+						<p> April 12 Russian troops had divided the city, splitting Ukrainian forces.
+                            <br><br>
+                            Mariupol has been under siege by Russian forces for more than 40 days. 
+                            Civilians who remain in the city lack access to water, food or electricity, 
+                            and they face almost constant aerial bombardment. Almost no area of 
+                            the city has been left unscathed, according to an analysis of satellite 
+                            imagery by Masae Analytics, a company that assesses damage to buildings.
+                        </p>
+					</div>
+				</div>
+			</section>
+			<div id='anchor-4'></div>
+			<section id='outro'></section>
+			<div id='anchor-5'></div>
+		</div>
+
+	</main>
+
+    <script language="JavaScript">
+
+        let scrollPos = 0;
+        const obj = document.getElementById("sticky");
+        
+        obj.onscroll = function() {
+            var url = document.getElementById("ukraine").src;
+            scrollPos = window.pageYOffset;
+            console.log(url);
+            console.log(scrollPos);
+            if (scrollPos > 1000) {
+                url = "media/map2.png"
+            }
+            if (scrollPos > 2000) {
+                url = "media/map3.png"
+            }
+            document.getElementById("ukraine").src = url;
+        };
+
+    </script>
+
+</body>
